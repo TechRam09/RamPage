@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamPage | Login</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/03421ac8ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://shorturl.at/orAH9">
+    <script>
+        const Greeting = () =>{
+            var username = document.getElementById("username").value
+            alert(`hi! ${username} you have successfully logged into RamPage`)
+        }
+    </script>
+</head>
+<body>
+    <div class="flex h-screen items-center">
+        
+            <img class="hidden lg:block w-1/2 h-full  " src="https://img.freepik.com/free-photo/dark-green-leaves-garden-emerald-green-leaf-texture-nature-abstract-background-tropical-forest-view-dark-green-leaves-with-natural-pattern_33867-1475.jpg?size=626&ext=jpg" alt="">
+        
+        <div class=" flex flex-col justify-center items-center h-screen w-full lg:w-1/2 ">
+            <div>
+                <div class=" flex text-3xl font-bold  lg:text-left font-mono">
+                    <img class="h-[50px] m-2 rounded-full" src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds" alt="">
+                    <span class=" m-3  items-center">RamPage</span>
+                </div>
+                <div class=" text-3xl font-bold  lg:text-left font-mono mt-8">
+                        <h2>Hello,</h2>
+                        <h2>Welcome Back </h2> 
+                </div>
+                <form action="./index2.html">
+                    <div class=" mt-8 font-semibold text-md" >
+                           Login to manage your account
+                    </div>
+                    <input class="mt-4 space-x-4 px-4 py-2 w-full border border-spacing-1" type="text" placeholder="Username" id="username" >
+                    <input class="mt-4 space-x-4 px-4 py-2 w-full border border-spacing-1" type="password" placeholder="Password">
+                    <div class=" my-4 text-sm font-semibold cursor-pointer text-blue-600 hover:text-blue-400">
+                        Forgot your password?
+                    </div>
+                   <button class="w-full text-center bg-green-600 text-white rounded-md py-[8px] hover:bg-green-400" type="submit" onclick="Greeting()">Login</button>
+                </form>
+             
+                <div class=" text-bold mt-2 text-lg text-center font-mono">
+                    <span>
+                        or
+                    </span>
+                </div>
+                <div class="flex gap-8 justify-center items-center">
+                   <a href="https://www.facebook.com/" target="_blank"><i class=" mt-2 fa-brands fa-facebook text-3xl "></i></a> 
+                   <a href="http://mail.google.com/mail/" target="_blank"><i class=" mt-2 fa-brands fa-google text-3xl "></i></a> 
+                   <a href="https://www.linkedin.com/" target="_blank"><i class=" mt-2 fa-brands fa-linkedin text-3xl "></i></a> 
+                   <a href="https://github.com/login" target="_blank"><i class=" mt-2 fa-brands fa-github text-3xl "></i></a> 
+                </div>
+                <div class=" mt-4 text-center font-semibold">
+                    <span>Don't have an account ? <a class="text-blue-600 hover:text-blue-400" href="./register.html">Signup</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

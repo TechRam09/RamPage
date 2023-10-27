@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamPage | Home</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/03421ac8ca.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="h-[70px] w-full bg-zinc-950 flex justify-between items-center sticky top-0 z-1">
+        <div class="flex">
+            <img class="h-[50px] m-2 rounded-full" src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds" alt="">
+            <a href="./index.html"><h2 class="text-white m-3 font-mono text-3xl items-center cursor-pointer">RamPage</h2></a>
+        </div>
+        <ul id="menu" class="hidden sm:flex text-center items-center justify-center text-white gap-4 text-lg font-semibold cursor-pointer">
+            <li class="hover:text-yellow-300 text-yellow-300 active:text-yellow-300"><a href="./index2.html">Home</a></li>
+            <li class="hover:text-yellow-300 active:text-yellow-300"><a href="./about2.html">About Us</a></li>
+            <li class="hover:text-yellow-300 active:text-yellow-300 "><a href="./pricing2.html">Pricing</a></li>
+            <li class="hover:text-yellow-300active:text-yellow-300"><a href="./contact2.html">Contact Us</a></li>
+        </ul>
+        <form action="">
+            <div>
+                <h2 class="hidden sm:block text-black bg-yellow-300 rounded-lg p-2 mr-4  font-semibold hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 cursor-pointer">Logged In</h2>
+            </div>
+        </form>
+        <button id="menuToggle" class="sm:hidden text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-12 w-12">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    
+    <div id="fullScreenMenu" class="fixed top-0 left-0 w-full h-full bg-zinc-950 text-white hidden z-10">
+        <button id="closeMenu" class="absolute top-4 right-4 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="flex flex-col items-center justify-center h-full z-10">
+            <li class="my-4  text-yellow-300"><a href="./index2.html">Home</a></li>
+            <li class="my-4"><a href="./about2.html">About Us</a></li>
+            <li class="my-4"><a href="./pricing2.html">Pricing</a></li>
+            <li class="my-4 "><a href="./contact2.html">Contact Us</a></li>
+            
+        </ul>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const fullScreenMenu = document.getElementById("fullScreenMenu");
+            const closeMenuButton = document.getElementById("closeMenu");
+    
+            menuToggle.addEventListener("click", function () {
+                fullScreenMenu.classList.toggle("hidden");
+            });
+    
+            closeMenuButton.addEventListener("click", function () {
+                fullScreenMenu.classList.add("hidden");
+            });
+        });
+    </script>
+<div class="h-screen flex w-full bg-zinc-950 items-center justify-between">
+  <div class="flex flex-col ml-12 lg:ml-56">
+    <h1 class="text-white text-5xl font-bold mt-2">Learn <span class="auto-type text-yellow-300"></span></h1>
+    <h2 class="font-semibold text-xl text-yellow-300 mt-2">Hi Learners!!
+    </h2>
+    <p class="mt-2 text-md font-medium text-sm text-white">
+      Hope everyone doing Good!,Rampage is learning Platform,<br>Where Everyone Can Boost Up There Skills!!
+       & to be industrial ready.
+    </p>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+    var typed = new Typed(".auto-type",{
+        strings:[" Web-Development","DSA","Machine Learning","Block Chain","Cloud Computing","Cyber Security","Ethical Hacking","App Development"],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:Infinity
+    })
+   </script>
+    <img class="hidden lg:block rounded-md mb-2  lg:h-[500px] md:w-[500px] sm:mr-20 lg:mr-36 md:mb-8   md:ml-4"
+    src="https://pwskills.com/images/homePage/hero-bg.png" alt="">
+</div>
+ <section class="py-24 text-center md:h-100% lg:h-[100vh] snap-start snap-always hidden sm:block ">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12">
+        <a href="./pricing.html"><h2 class="text-2xl font-semibold md:text-3xl">Our Courses</h2></a>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  ">
+            <div class="rounded-md p-6 text-center shadow-xl shadow-black bg-zinc-900 text-white flex justify-center items-center flex-col h-48 cursor-pointer">
+                <i class="fa-solid fa-laptop-code text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Full-Stack Web-Development</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-solid fa-code  text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Data-Structure & Algorithm</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-solid fa-robot text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md ">Machine learning in Python</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-solid fa-code-compare text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Block-Chain</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-brands fa-aws text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Cloud Computing</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-solid fa-shield-halved text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Cyber Security</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <i class="fa-solid fa-user-secret  text-white text-3xl pb-3"></i>
+                <h1 class=" font-bold text-md">Ethical-Hacking</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col ">
+                <div class="flex text-white text-3xl pb-3">
+                    <i class="fa-brands fa-google-play"></i>
+                    <i class="fa-brands fa-app-store ml-3"></i>
+                </div>
+                <h1 class=" font-bold text-md">APP development</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div> 
+        </div>
+        <form action="./pricing.html">
+            <button class=" md:text-lg p-3 rounded-lg mt-16 bg-zinc-900 text-white">Explore</button>
+        </form>
+    </div>
+</section>
+<section class="py-24 text-center lg:h-[100vh] snap-start snap-always h-100%  bg-white sm:bg-zinc-900 ">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-12">
+        <a href="./pricing.html"><h2 class="text-2xl font-semibold md:text-3xl text-black sm:text-white">Our Services</h2></a>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  ">
+            <div class="rounded-md p-6 text-center shadow-xl shadow-black bg-zinc-900 text-white flex justify-center items-center flex-col h-48 cursor-pointer">
+                <img class="w-20 h-auto overflow-hidden" src="https://lab.pwskills.com/images/landingpage/iso-9001-2015.svg" alt="">
+                <h1 class=" font-bold text-md">Certifactes</h1>
+                <p>Assured Certicate </p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden" src="https://pwskills.com/images/homePage/statistics2.png" alt="">
+                <h1 class=" font-bold text-md mt-2">15+ Courses</h1>
+                <p>13 free courses, 3 paid courses </p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden" src="https://pwskills.com/images/homePage/offerbanner/live.png" alt="">
+                <h1 class=" font-bold text-md mt-2">10+ Live Courses</h1>
+                <p>Everyday Live Sessions </p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden" src="https://pwskills.com/images/homePage/offerbanner/trophy.png" alt="">
+                <h1 class=" font-bold text-md mt-2">25+ Hiring Partners</h1>
+                <p> 200+ Placed</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden" src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678120-calendar-clock-512.png" alt="">
+                <h1 class=" font-bold text-md mt-2">Life-Time Access</h1>
+                <p> AnyTime,AnyWhere</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden" src="https://cdn-icons-png.flaticon.com/512/5766/5766302.png" alt="">
+                <h1 class=" font-bold text-md mt-2">One-to-One Mentoring</h1>
+                <p> 24 hours Mentoring Support</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col">
+                <img class="w-20 h-auto overflow-hidden " src="https://eu-central.storage.cloudconvert.com/tasks/5e4f759f-2f4a-4313-9b4a-ba97af38e1e5/pngwing.com.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20231023%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20231023T200600Z&X-Amz-Expires=86400&X-Amz-Signature=be32773372d082f47460f1f8ff0fc0fbf5f43981e0b8ad9dbdb40d985de8b13c&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22pngwing.com.png%22&response-content-type=image%2Fpng&x-id=GetObject" alt="">
+                <h1 class=" font-bold text-md mt-2">Notes & Resource Materials</h1>
+                <p> Materials are provided</p>
+            </div>
+            <div class="rounded-md p-6 text-left shadow-xl shadow-black bg-zinc-900 text-white h-48 flex justify-center items-center flex-col ">
+                <img class="w-20 h-auto overflow-hidden" src="https://eu-central.storage.cloudconvert.com/tasks/f1a91aad-9d93-4530-9732-1d291434525b/pngegg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20231023%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20231023T195927Z&X-Amz-Expires=86400&X-Amz-Signature=30b20a43c1dd3a688188857734fd1d37b21a40d94246e5d1f8150beeeaaf843f&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22pngegg.png%22&response-content-type=image%2Fpng&x-id=GetObject" alt="">
+                <h1 class=" font-bold text-md mt-2">Industry Experience</h1>
+                <p>150+ projects, 500+ Interns</p>
+            </div>
+        </div>
+    </div>
+</section>
+ <footer class="hidden sm:flex h-full w-full bg-zinc-950 justify-between">
+    <div class="p-8 flex-flex-col">
+        <div class="flex ">
+            <h2 class=" text-white m-3 font-mono text-3xl items-center">RamPage</h2>
+            <img class="h-[50px] m-2 rounded-full w-[50px]" src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds" alt="">
+        </div> 
+        <p class=" text-slate-500 ml-3">Rampage&copy;All Rights Reseved-2023
+        </p>    
+    </div>
+    <div class="p-8 flex-flex-col">
+        <div class="flex"> 
+            <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span> 
+            <p class="text-white">
+               <a class=" hover:underline"  href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank"> #61,Teacher's Layout,Mysore-571301 <br>Karnataka,India</a>
+            </p>
+        </div>
+        <div class="flex mt-2"> 
+            <span class="text-white ">
+                <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+            </span> 
+            <p class="text-white ">
+               call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+            </p>
+        </div>
+        <div class="flex mt-2"> 
+            <span class="text-white ">
+                <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+            </span> 
+            <p class="text-white">
+               Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+            </p>
+        </div>
+    </div>
+    <div class="flex  flex-col  p-8 w-[300px] mr-[60px] justify-center align-center">
+        <div class="flex flex-col justify-center items-center">
+            <p class=" text-white text-lg align-center">Connect us at</p>
+        </div>
+        <hr class="te aliign-left">
+        <div class="flex gap-8 justify-center items-center">
+            <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a> 
+            <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a> 
+            <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a> 
+         </div>
+    </div>
+ </footer>
+ <footer class="sm:hidden flex-col justify-center items-center h-full w-full bg-zinc-950 text-white">
+
+    <div class="p-8 flex-flex-col  justify-center items-center align-center">
+        <div class="flex"> 
+            <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span> 
+            <p class="text-white">
+               <a class=" hover:underline"  href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank"> #61,Teacher's Layout,Mysore-571301 <br>Karnataka,India</a>
+            </p>
+        </div>
+        <div class="flex mt-2 align-center"> 
+            <span class="text-white ">
+                <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+            </span> 
+            <p class="text-white align-center ">
+               call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+            </p>
+        </div>
+        <div class="flex mt-2"> 
+            <span class="text-white ">
+                <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+            </span> 
+            <p class="text-white">
+               Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="flex  flex-col  p-8 justify-center align-center">
+        <div class="flex flex-col justify-center items-center">
+            <p class=" text-white text-lg align-center">Connect us at</p>
+        </div>
+        <hr class=" aliign-left">
+        <div class="flex gap-8 justify-center items-center">
+            <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a> 
+            <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a> 
+            <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a> 
+         </div>
+         <div class="flex flex-col justify-center items-center">
+            <p class="mt-4 text-slate-500 align-center">Rampage&copy;All Rights Reseved-2023</p>
+        </div>
+    </div>
+ </footer>
+ </body>
+ </html>

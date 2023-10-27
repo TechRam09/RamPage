@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rampage | About</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/03421ac8ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://shorturl.at/orAH9">
+</head>
+
+<body>
+    <nav class="h-[70px] w-full bg-zinc-950 flex justify-between items-center sticky top-0 z-1">
+        <div class="flex">
+            <img class="h-[50px] m-2 rounded-full" src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds" alt="">
+            <a href="./index.html"><h2 class="text-white m-3 font-mono text-3xl items-center cursor-pointer">RamPage</h2></a>
+        </div>
+        <ul id="menu" class="hidden sm:flex text-center items-center justify-center text-white gap-4 text-lg font-semibold cursor-pointer">
+            <li class="hover:text-yellow-300 active:text-yellow-300"><a href="./index.html">Home</a></li>
+            <li class="text-yellow-300 hover:text-yellow-300 active:text-yellow-300"><a href="./about.html">About Us</a></li>
+            <li class="hover:text-yellow-300 active:text-yellow-300 "><a href="./pricing.html">Pricing</a></li>
+            <li class="hover:text-yellow-300  active:text-yellow-300"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <form action="">
+            <button
+                class="hidden sm:block text-black bg-yellow-300 rounded-lg p-2 mr-4 hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 font-semibold "
+                formaction="./login.html">Login/Signup
+            </button>
+        </form>
+        <button id="menuToggle" class="sm:hidden text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-12 w-12">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    
+    <div id="fullScreenMenu" class="fixed top-0 left-0 w-full h-full bg-zinc-950 text-white hidden">
+        <button id="closeMenu" class="absolute  top-4 right-4 text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="text-yellow-300 h-6 w-6">
+                <path class="text-yellow-300" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="flex flex-col items-center justify-center h-full">
+            <li class="my-4"><a href="./index.html">Home</a></li>
+            <li class="my-4 text-yellow-300"><a href="./about.html">About Us</a></li>
+            <li class="my-4"><a href="./pricing.html">Pricing</a></li>
+            <li class="my-4  "><a href="./contact.html">Contact Us</a></li>
+            <li class="my-4 ">
+                <a href="./login.html" class="text-black bg-yellow-300 rounded-lg p-2  hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 font-semibold">Login/Signup</a>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const fullScreenMenu = document.getElementById("fullScreenMenu");
+            const closeMenuButton = document.getElementById("closeMenu");
+    
+            menuToggle.addEventListener("click", function () {
+                fullScreenMenu.classList.toggle("hidden");
+            });
+    
+            closeMenuButton.addEventListener("click", function () {
+                fullScreenMenu.classList.add("hidden");
+            });
+        });
+    </script>
+
+    <div
+        class="bg-zinc-900 h-full flex flex-col md:flex-row md:flex-wrap gap-8 md:h-screen justify-center items-center">
+        <div class="md:w-[1000px] mx-auto p-6 rounded-xl shadow-xl shadow-black bg-zinc-900 tab">
+
+            <div class="md:flex md:items-center mr-4">
+                <img class="rounded-md mb-2 h-[250px] w-[250px] md:mr-8 md:mb-0 mt-8 mx-auto md:ml-4"
+                    src="https://i.ibb.co/b6T6gxt/my-photo.jpg" alt="">
+                <div class="ml-4 mt-4">
+                    <h1 class="font-bold text-2xl text-yellow-300">CEO & Co-Founder Of RamPage</h1>
+                    <h2 class="mt-3 font-bold text-white ">Shreeram N S,I'm a <span class="text-yellow-300 typed"></span></h2>
+                    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                     <script>
+                     var typed = new Typed(".typed",{
+                        strings:["CEO of RamPage","Entrepreneur","Programmer","Front-End Developer"],
+                        typeSpeed:150,
+                        backSpeed:150,
+                        loop:Infinity
+                        })
+                    </script>
+                    <p class="mt-4 font-medium text-sm text-white">
+                        Greetings! I'm Shreeram N S, a dedicated and motivated FrontEnd Developer on an exciting journey
+                        of exploration and innovation. Currently enrolled in the B.Tech program for Computer Science at
+                        Vidya Vikas Institute Of Engineering and Technology in Mysore, I've found my true calling in the
+                        realm of web development.My fascination with technology sparked at a young age and has grown
+                        into a passion for creating captivating digital experiences. Armed with a toolbox of skills,
+                        including HTML, CSS, Tailwind CSS, JavaScript, and React JS, I'm always eager to tackle new
+                        challenges and bring my creative visions to life. These languages are not just codes to me;
+                        they're the palette with which I paint the canvas of user-friendly interfaces and dynamic web
+                        applications.While the world of FrontEnd development ignites my professional drive, my journey
+                        goes beyond the screen. My coding odyssey led me to co-founding RamPage, an E-learning platform
+                        where I serve as the CEO. RamPage is not just a platform; it's a commitment to shaping the
+                        education landscape. Through RamPage, I strive to provide students with hands-on skills that
+                        harmonize with industry requirements. Guiding students to be job-ready and empowering them with
+                        practical knowledge is my mission.As much as I thrive on coding, I also find harmony in
+                        melodies. Music is my escape, and I'm an avid enthusiast of various genres. The parallels
+                        between the rhythms of music and the symphony of code often inspire fresh approaches in my
+                        development work.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="hidden sm:flex h-full w-full bg-zinc-950 justify-between">
+        <div class="p-8 flex-flex-col">
+            <div class="flex ">
+                <h2 class=" text-white m-3 font-mono text-3xl items-center">RamPage</h2>
+                <img class="h-[50px] m-2 rounded-full w-[50px]"
+                    src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds"
+                    alt="">
+            </div>
+            <p class=" text-slate-500 ml-3">Rampage&copy;All Rights Reseved-2023
+            </p>
+        </div>
+        <div class="p-8 flex-flex-col">
+            <div class="flex">
+                <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span>
+                <p class="text-white">
+                    <a class=" hover:underline" href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank">
+                        #61,Teacher's Layout,Mysore-571301 <br>Karnatak,India</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+                </span>
+                <p class="text-white ">
+                    call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+                </span>
+                <p class="text-white">
+                    Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="flex  flex-col  p-8 w-[300px] mr-[60px] justify-center align-center">
+            <div class="flex flex-col justify-center items-center">
+                <p class=" text-white text-lg align-center">Connect us at</p>
+            </div>
+            <hr class="te aliign-left">
+            <div class="flex gap-8 justify-center items-center">
+                <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i
+                        class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a>
+                <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a>
+                <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a>
+            </div>
+        </div>
+    </footer>
+    <footer class="sm:hidden flex-col justify-center items-center h-full w-full bg-zinc-950 text-white">
+
+        <div class="p-8 flex-flex-col  justify-center items-center align-center">
+            <div class="flex">
+                <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span>
+                <p class="text-white">
+                    <a class=" hover:underline" href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank">
+                        #61,Teacher's Layout,Mysore-571301 <br>Karnatak,India</a>
+                </p>
+            </div>
+            <div class="flex mt-2 align-center">
+                <span class="text-white ">
+                    <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+                </span>
+                <p class="text-white align-center ">
+                    call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+                </span>
+                <p class="text-white">
+                    Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex  flex-col  p-8 justify-center align-center">
+            <div class="flex flex-col justify-center items-center">
+                <p class=" text-white text-lg align-center">Connect us at</p>
+            </div>
+            <hr class=" aliign-left">
+            <div class="flex gap-8 justify-center items-center">
+                <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i
+                        class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a>
+                <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a>
+                <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <p class="mt-4 text-slate-500 align-center">Rampage&copy;All Rights Reseved-2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

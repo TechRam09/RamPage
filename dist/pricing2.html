@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RamPage | Pricing</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/03421ac8ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://shorturl.at/orAH9">
+</head>
+
+<body class=" scroll-smooth">
+
+    <nav class="h-[70px] w-full bg-zinc-950 flex justify-between items-center sticky top-0 z-1">
+        <div class="flex">
+            <img class="h-[50px] m-2 rounded-full" src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds" alt="">
+            <a href="./index.html"><h2 class="text-white m-3 font-mono text-3xl items-center cursor-pointer">RamPage</h2></a>
+        </div>
+        <ul id="menu" class="hidden sm:flex text-center items-center justify-center text-white gap-4 text-lg font-semibold cursor-pointer">
+            <li class="hover:text-yellow-300 active:text-yellow-300"><a href="./index2.html">Home</a></li>
+            <li class="hover:text-yellow-300 active:text-yellow-300"><a href="./about2.html">About Us</a></li>
+            <li class="hover:text-yellow-300  text-yellow-300 active:text-yellow-300 "><a href="./pricing2.html">Pricing</a></li>
+            <li class="hover:text-yellow-300 active:text-yellow-300"><a href="./contact2.html">Contact Us</a></li>
+        </ul>
+        <div>
+            <h2 class="hidden sm:block text-black bg-yellow-300 rounded-lg p-2 mr-4  font-semibold hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 cursor-pointer">Logged In</h2>
+        </div>
+        <button id="menuToggle" class="sm:hidden text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-12 w-12">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </nav>
+    
+    <div id="fullScreenMenu" class="fixed top-0 left-0 w-full h-full bg-zinc-950 text-white hidden">
+        <button id="closeMenu" class="absolute top-4 right-4 text-yellow-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="flex flex-col items-center justify-center h-full">
+            <li class="my-4"><a href="./index2.html">Home</a></li>
+            <li class="my-4"><a href="./about2.html">About Us</a></li>
+            <li class="my-4  text-yellow-300"><a href="./pricing2.html">Pricing</a></li>
+            <li class="my-4 "><a href="./contact2.html">Contact Us</a></li>
+           
+        </ul>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.getElementById("menuToggle");
+            const fullScreenMenu = document.getElementById("fullScreenMenu");
+            const closeMenuButton = document.getElementById("closeMenu");
+    
+            menuToggle.addEventListener("click", function () {
+                fullScreenMenu.classList.toggle("hidden");
+            });
+    
+            closeMenuButton.addEventListener("click", function () {
+                fullScreenMenu.classList.add("hidden");
+            });
+        });
+    </script>
+    <div class="  bg-zinc-900 h-full w-full flex flex-wrap gap-8 md:h-screen justify-center items-center overflow-y-scroll sm:overflow-hidden">
+        
+        <div class="w-72 h-96 mt-8 md:m-0  rounded-lg text-blue-600  shadow-xl shadow-black bg-cover bg-white bg-[url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/01/25101-e1656072622949.jpg?resize=1200%2C900&ssl=1')] z-3 ">
+            <h2 class=" shadow-yellow-50 text-left font-bold font-serif text-xl m-3">Full-Stack Webdevelopment</h2>   
+            <h2 class=" text-left font-bold font-serif text-xl m-3">&#8377 4999/-</h2>  
+            <h3 class="text-left font-bold font-serif text-xl mt-3 ml-3 text-black z-3">From ZeRo To HeRo!!!!</h3>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-3 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-3 ml-3">
+                    39.5 hours on-demand video
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    6 articles
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Access on mobile and TV
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Multiple Project Sessions
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Life-Time Access
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Certificate of completion
+                </p>
+            </div>
+            <div class="flex justify-center items-center mt-6">
+                <button class="block  text-black bg-yellow-300 rounded-lg p-2 mr-4 hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 font-semibold ">Buy Now</button> 
+            </div>
+        </div>
+        <div class="w-72 h-96 mt-8 md:mt-0 rounded-lg text-blue-600  shadow-xl shadow-black bg-cover bg-white bg-[url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/01/25101-e1656072622949.jpg?resize=1200%2C900&ssl=1')] z-3 ">
+            <h2 class=" shadow-yellow-50 text-left font-bold font-serif text-xl m-3">Data-Structure and Algorithm</h2>   
+            <h2 class=" text-left font-bold font-serif text-xl m-3">&#8377 6999/-</h2>  
+            <h3 class="text-left font-bold font-serif text-xl mt-3 ml-3 text-black z-3">A-Z of DSA!!!!</h3>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-3 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-3 ml-3">
+                    39.5 hours on-demand video
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    DSA Materials and Resources
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Access on mobile and TV
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Problem Solving Sessions
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Life-Time Access
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Certificate of completion
+                </p>
+            </div>
+            <div class="flex justify-center items-center mt-6">
+                <button class="block  text-black bg-yellow-300 rounded-lg p-2 mr-4 hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 font-semibold ">Buy Now</button> 
+            </div>
+        </div>
+        <div class="  w-72 h-96 mt-8 md:m-0 rounded-lg text-blue-600 shadow-xl shadow-black bg-cover bg-white bg-[url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/01/25101-e1656072622949.jpg?resize=1200%2C900&ssl=1')]">
+            <h2 class=" text-left font-bold font-serif text-xl m-3 ">Machine Learning in Python</h2>   
+            <h2 class=" text-left font-bold font-serif text-xl m-3">&#8377 8999/-</h2>  
+            <h3 class="text-left font-bold font-serif text-xl mt-3 ml-3 text-black z-3">Basic python,AI & ML!!!!</h3>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-3 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-3 ml-3">
+                    39.5 hours on-demand video
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2 text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Python notes and Materials
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Access on mobile and TV
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Multiple project session
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Life-Time Access
+                </p>
+            </div>
+            <div class="flex"> 
+                <span class=" text-left font-bold font-serif text-xl ml-3 mt-2  text-black"><i class="fa-solid fa-check"></i></span> 
+                <p class="text-left font-bold font-serif text-md mt-2 ml-3">
+                    Certificate of completion
+                </p>
+            </div>
+            <div class="flex justify-center items-center mt-6">
+                <button class="block  text-black bg-yellow-300 rounded-lg p-2 mr-4 hover:text-yellow-300 hover:bg-zinc-950 hover:border hover:border-yellow-300 font-semibold ">Buy Now</button> 
+            </div>
+            
+        </div>  
+        
+    </div>
+    
+
+
+    <footer class="hidden sm:flex h-full w-full bg-zinc-950 justify-between">
+        <div class="p-8 flex-flex-col">
+            <div class="flex ">
+                <h2 class=" text-white m-3 font-mono text-3xl items-center">RamPage</h2>
+                <img class="h-[50px] m-2 rounded-full w-[50px]"
+                    src="https://lh3.googleusercontent.com/a/AAcHTtdN5tefVH7fVorhvZTevlR3dEo6RiHuNacOR4XXszQUgZD5Zsfi4WSLLi0-lo4Bf0Y2rJj878PBX-ESsJzTPuDeMds"
+                    alt="">
+            </div>
+            <p class=" text-slate-500 ml-3">Rampage&copy;All Rights Reseved-2023
+            </p>
+        </div>
+        <div class="p-8 flex-flex-col">
+            <div class="flex">
+                <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span>
+                <p class="text-white">
+                    <a class=" hover:underline" href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank">
+                        #61,Teacher's Layout,Mysore-571301 <br>Karnataka,India</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+                </span>
+                <p class="text-white ">
+                    call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+                </span>
+                <p class="text-white">
+                    Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="flex  flex-col  p-8 w-[300px] mr-[60px] justify-center align-center">
+            <div class="flex flex-col justify-center items-center">
+                <p class=" text-white text-lg align-center">Connect us at</p>
+            </div>
+            <hr class="te aliign-left">
+            <div class="flex gap-8 justify-center items-center">
+                <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i
+                        class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a>
+                <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a>
+                <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a>
+            </div>
+        </div>
+    </footer>
+    <footer class="sm:hidden flex-col justify-center items-center h-full w-full bg-zinc-950 text-white">
+
+        <div class="p-8 flex-flex-col  justify-center items-center align-center">
+            <div class="flex">
+                <span class="text-white "><i class="fa-solid fa-location-dot  h-[35px] w-[35px]"></i></span>
+                <p class="text-white">
+                    <a class=" hover:underline" href="https://goo.gl/maps/H7yRHwr1kxzBivu76" target="_blank">
+                        #61,Teacher's Layout,Mysore-571301 <br>Karnataka,India</a>
+                </p>
+            </div>
+            <div class="flex mt-2 align-center">
+                <span class="text-white ">
+                    <i class="fa-solid fa-phone h-[35px] w-[35px]"></i>
+                </span>
+                <p class="text-white align-center ">
+                    call us at - <a class=" hover:underline" href="tel:+91 9019499173">+91 9019499173</a>
+                </p>
+            </div>
+            <div class="flex mt-2">
+                <span class="text-white ">
+                    <i class="fa-solid fa-envelope h-[35px] w-[35px] "></i>
+                </span>
+                <p class="text-white">
+                    Email at- <a class=" hover:underline" href="mailto:nsshreeram@gmail.com">nsshreeram@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex  flex-col  p-8 justify-center align-center">
+            <div class="flex flex-col justify-center items-center">
+                <p class=" text-white text-lg align-center">Connect us at</p>
+            </div>
+            <hr class="te aliign-left">
+            <div class="flex gap-8 justify-center items-center">
+                <a href="https://www.facebook.com/shreeram.bharadwaj.1" target="_blank"><i
+                        class="text-white mt-2 fa-brands fa-facebook text-3xl "></i></a>
+                <a href="https://www.linkedin.com/in/shreeram-ns" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-linkedin text-3xl "></i></a>
+                <a href="https://www.instagram.com/i_am___raam/" target="_blank"><i
+                        class=" mt-2  text-white fa-brands fa-instagram text-3xl "></i></a>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <p class="mt-4 text-slate-500 align-center">Rampage&copy;All Rights Reseved-2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
